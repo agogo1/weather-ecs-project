@@ -20,7 +20,7 @@ phases:
       - echo Pushing image...
       - docker push $REPOSITORY_URI:$IMAGE_TAG
 
-      - printf '[{"name":"weather-app","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
+      - printf '[{"name":"DeployToEcsFargateContainerName","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
 
 artifacts:
   files:
